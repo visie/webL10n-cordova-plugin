@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  Copyright (c) 2015 BD Network. All rights reserved.
+-->
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.thisisbd.html10n"
+        version="1.0">
+
+    <name>html10n Plugin</name>
+    <author>mattrayner</author>
+    <repo>https://github.com/thisisbd/html10n-cordova-plugin</repo>
+
+    <!-- Include our plugin. -->
+    <js-module src="www/js/l10n-plugin.js" name="l10n-plugin">
+        <clobbers target="plugins.html10n" />
+    </js-module>
+
+
+    <!-- Add tbe html10n library into the project -->
+    <asset src="www/js/thirdparty/l10n.js" target="js/thirdparty/l10n.js" />
+
+    <!-- Declare a dependancy on device. -->
+    <dependency id="org.apache.cordova.device" url="https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git" commit="master" subdir="." />
+
+    <!-- Declare a dependency on app version. -->
+    <dependency id="uk.co.whiteoctober.cordova.appversion" url="https://github.com/whiteoctober/cordova-plugin-app-version.git" commit="master" subdir="." />
+
+</plugin>
