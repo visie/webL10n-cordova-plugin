@@ -24,6 +24,6 @@
     <dependency id="org.apache.cordova.device" url="https://git-wip-us.apache.org/repos/asf/cordova-plugin-device.git" commit="master" subdir="." />
 
     <!-- Declare a dependency on app version. -->
-    <dependency id="uk.co.whiteoctober.cordova.appversion" url="https://github.com/whiteoctober/cordova-plugin-app-version.git" commit="master" subdir="." />
+    <dependency id="cordova-plugin-app-version" url="https://github.com/whiteoctober/cordova-plugin-app-version.git" commit="master" subdir="." />
 
 </plugin>
